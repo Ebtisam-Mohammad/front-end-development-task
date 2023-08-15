@@ -2,28 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="./photo.jpg" alt="photo icon" width="200" height="150">
-    <h1>CV</h1>
-</header>
-
+    <div class="rows-first">
     <div>
-        <h2>Info Personal</h2>
-        <h3>Name:</h3>
-        <p>Ebtisam-mohammad</p>
-        <h3>E-mail:</h3>
-        <p>Ebtisam.moh101@gmail.com</p>
-        <h3>Phone Number:</h3>
-        <p>+9665599999</p>
-        <h3>Github</h3>
-        <a href="https://github.com/Ebtisam10" target="_blank">Github link</a>
+    <img class="user-photo" src="./photo.jpg" alt="photo icon">
     </div>
+    <div>
+        <h1>Ebtisam Mohammad</h1>
+        <p>Front-End developer, UI/UX designer</p>
+    </div>
+    </div>
+    <div class="rows">
+        <div>
+            <h3>Personal Information</h3>
+        <ul>
+            <li><a href="mailto: abc@example.com">
+                <p>E-mail: Ebtisam.moh101@gmail.com</p>
+            </a></li>
+            <li>Phone Number: 9665599999</li>
+            <li>
+                <a href="https://github.com/Ebtisam10" target="_blank">Github link</a>
+
+            </li>
+        </ul>
+        </div>
     <div>
         <h3>Education</h3>
         <ul>
@@ -32,14 +40,16 @@
             <li>2016-2021</li>
         </ul>
     </div>
-    <div>
-        <h3>Experince</h3>
-            <ul>
-            <li>Job Title: IT</li>
-            <li>Company Name: Alraeedah</li>
-            <li>2022-2023</li>
-        </ul>
     </div>
+    <div class="rows">
+        <div>
+            <h3>Experince</h3>
+                <ul>
+                <li>Job Title: IT</li>
+                <li>Company Name: Alraeedah</li>
+                <li>2022-2023</li>
+            </ul>
+        </div>
     <div>
         <h3>Soft Skills</h3>
         <ul>
@@ -50,6 +60,8 @@
             <li>Self-Education</li>
         </ul>
     </div>
+    </div>
+    <div class="rows">
     <div>
         <h3>Technical Skills</h3>
         <ul>
@@ -67,9 +79,12 @@
             <li>English</li>
         </ol>
     </div>
+</div>
+
+<div class="rows">
     <div>
         <form>
-            <h3>CONTACT ME</h3>            
+            <h3 class="contact">CONTACT ME</h3>            
             <div>
                 <!-- <label for="name">Full name:</label> -->
             <input type="text" name="name" id="name" placeholder="name">
@@ -87,6 +102,7 @@
                 <input type="submit" id="submit">
             </div>
         </form>
-    </div>      
+    </div>
+</div>    
 </body>
 </html>
